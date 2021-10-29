@@ -1,12 +1,12 @@
 import React from 'react';
-import Heder from './components/Heder';
+import Header from './components/Header';
 
 class App extends React.Component {
   render() {
     return (
       <>
         <p> 👨‍🚀 Sistema Solar</p>
-        <Heder />
+        <Header />
       </>
     );
   }
