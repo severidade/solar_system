@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class SolarSystem extends Component {
   render() {
     return (
-      <header>
+      <div>
         <h1>SolarSystem Component</h1>
-      </header>
+      </div>
     );
   }
 }
