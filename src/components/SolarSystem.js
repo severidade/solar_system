@@ -4,7 +4,7 @@ class SolarSystem extends Component {
   render() {
     return (
       <div data-testid="solar-system">
-        <p>lolfdjfidjfidj</p>
+        <p>--</p>
       </div>
     );
   }
