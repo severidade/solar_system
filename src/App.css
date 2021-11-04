@@ -69,7 +69,7 @@ body {
 header {
   display: flex;
   margin: auto;
-  padding-bottom: 50px;
+  padding: 50px 0;
   width: 80%;
 }
 
@@ -107,4 +107,16 @@ img {
   height: 100%;
   object-fit: contain;
   width: 100%;
+}
+
+h1 {
+  font-size: 4vw;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
 }
