@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
 }
 
-* , *:before , *:after {
+*, *:before, *:after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -29,11 +29,11 @@ body {
 
 .conteiner_planet_image {
   background: oldlace;
-  height: 25px;
+  height: 80px;
   width: 100%;
 }
 
-img{
+img {
   height: 100%;
   object-fit: contain;
   width: 100%;
