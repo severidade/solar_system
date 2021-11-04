@@ -11,6 +11,7 @@ html {
 .App {
   text-align: center;
 }
+
 body {
   background-color: tomato;
 }
@@ -18,7 +19,8 @@ body {
 .conteiner_planeta {
   background: olive;
   display: flex;
-  width: 100%;
+  margin: auto;
+  width: 80%;
 }
 
 .planeta {
@@ -33,6 +35,6 @@ body {
 
 img{
   height: 100%;
-  width: 100%;
   object-fit: contain;
+  width: 100%;
 }
