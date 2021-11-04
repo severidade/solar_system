@@ -17,7 +17,10 @@ body {
   color: white;
 }
 
-.conteiner_planeta_title, .conteiner_planeta, .conteiner_missions, .conteiner_missions_title, header {
+.conteiner_planeta_title,
+ .conteiner_planeta,
+ .conteiner_missions,
+ .conteiner_missions_title, header {
   display: flex;
   margin: auto;
   padding-bottom: 50px;
