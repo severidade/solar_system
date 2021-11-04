@@ -4,8 +4,8 @@ html {
 
 * , *:before , *:after {
   box-sizing: inherit;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .App {
@@ -16,23 +16,23 @@ body {
 }
 
 .conteiner_planeta {
+  background: olive;
   display: flex;
   width: 100%;
-  background: olive;
 }
 
 .planeta {
-  width: calc(100% * 1/8);
+  flex-grow: 1;
 }
 
 .conteiner_planet_image {
-  width: 100%;
-  height: 25px;
   background: oldlace;
+  height: 25px;
+  width: 100%;
 }
 
 img{
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: contain;
 }
