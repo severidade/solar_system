@@ -33,9 +33,17 @@ body {
 
 .conteiner_missions {
   display: flex;
+  flex-wrap: wrap;
   margin: auto;
   padding-bottom: 50px;
   width: 80%;
+}
+
+.conteiner_mission {
+  flex-grow: 1;
+  max-width: 25%;
+  padding: 20px;
+  width: 25%;
 }
 
 .conteiner_missions_title {
