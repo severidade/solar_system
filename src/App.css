@@ -17,7 +17,7 @@ body {
   color: white;
 }
 
-div[class^="conteiner"], header{
+div[class^='conteiner'], header {
   display: flex;
   margin: auto;
   padding-bottom: 50px;
@@ -41,8 +41,8 @@ div[class^="conteiner"], header{
   position: relative;
 }
 
-.conteiner_planet_image::before {
-  content: "";
+.conteiner_planet_image:before {
+  content: '';
   width: 40%;
   height: 40%;
   position: absolute;

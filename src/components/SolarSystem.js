@@ -8,7 +8,9 @@ class SolarSystem extends Component {
     return (
       <div data-testid="solar-system">
 
-        <Title headline="Planetas" />
+        <div className="conteiner_planeta_title">
+          <Title headline="Planetas" />
+        </div>
 
         <div className="conteiner_planeta">
           {planets.map((planet) => (
