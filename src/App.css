@@ -14,12 +14,13 @@ html {
 
 body {
   background-color: #23032b;
+  background: url(./images/stars.png) repeat-x center #362a4e;
   color: white;
 }
 
 .conteiner_planeta {
   /* background: olive; */
-
+  
   display: flex;
   margin: auto;
   width: 80%;
@@ -38,7 +39,7 @@ body {
 
 .conteiner_planet_image {
   /* background: oldlace; */
-  
+
   height: 80px;
   width: 100%;
 }
