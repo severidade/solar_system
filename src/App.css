@@ -13,13 +13,11 @@ html {
 }
 
 body {
-  background: url(./images/stars.png) repeat-x center #362a4e;
+  background: url('./images/stars.png') repeat-x center #362a4e;
   color: white;
 }
 
 .conteiner_planeta {
-  /* background: olive; */
-  
   display: flex;
   margin: auto;
   width: 80%;
@@ -31,14 +29,12 @@ body {
 
 .planet-card {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
 .conteiner_planet_image {
-  /* background: oldlace; */
-
   height: 80px;
   width: 100%;
 }
