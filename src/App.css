@@ -17,9 +17,10 @@ body {
   color: white;
 }
 
-.conteiner_planeta {
+div[class^="conteiner"], header{
   display: flex;
   margin: auto;
+  padding-bottom: 50px;
   width: 80%;
 }
 
@@ -36,7 +37,21 @@ body {
 
 .conteiner_planet_image {
   height: 80px;
-  width: 100%;
+  width: 80px;
+  position: relative;
+}
+
+.conteiner_planet_image::before {
+  content: "";
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border-radius: 100%;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 14px 16px 20px #060508;
 }
 
 img {
