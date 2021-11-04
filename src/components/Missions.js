@@ -13,7 +13,7 @@ class Missions extends Component {
         <div className="conteiner_missions" data-testid="missions">
           {missions.map((mission) => (
             <div className="conteiner_mission" key={ mission.key }>
-              <MissionCard // posso por a key aqyu?
+              <MissionCard
                 name={ mission.name }
                 year={ mission.year }
                 country={ mission.country }
