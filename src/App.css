@@ -46,10 +46,23 @@ body {
   width: 25%;
 }
 
+.mission {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px #1a1a29;
+  color: #362a4e;
+  padding: 20px;
+  height: 100%;
+}
+
+.mission h3 {
+  padding-bottom: 20px;
+}
+
 .conteiner_missions_title {
   display: flex;
   margin: auto;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   width: 80%;
 }
 
