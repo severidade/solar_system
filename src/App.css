@@ -14,11 +14,12 @@ html {
 
 body {
   background-color: #23032b;
-  color: #fff;
+  color: white;
 }
 
 .conteiner_planeta {
   /* background: olive; */
+
   display: flex;
   margin: auto;
   width: 80%;
@@ -31,12 +32,13 @@ body {
 .planet-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .conteiner_planet_image {
   /* background: oldlace; */
+  
   height: 80px;
   width: 100%;
 }
