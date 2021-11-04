@@ -4,3 +4,25 @@
 body {
   background-color: tomato;
 }
+
+.conteiner_planeta {
+  display: flex;
+  width: 100%;
+  background: olive;
+}
+
+.planeta {
+  width: calc(100% * 1/8);
+}
+
+.conteiner_planet_image {
+  width: 100%;
+  height: 25px;
+  background: oldlace;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
