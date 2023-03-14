@@ -11,6 +11,8 @@
 
   --largura_celular: 90%;
 
+  --largura_desktop: 60%;
+
   --text_shadow: -2px 0 2px #03051f;
 }
 
@@ -51,7 +53,7 @@ header {
   display: grid;
   flex-wrap: wrap;
   gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
   grid-template-rows: auto;
 }
 
@@ -78,9 +80,11 @@ header {
 .planet-card h3 {
   border-top: 1px white dashed;
   display: block;
+  font-size: 20px;
   padding-bottom: 20px;
   padding-top: 10px;
   text-shadow: var(--text_shadow);
+  text-transform: uppercase;
   width: 70%;
   z-index: 2;
 }
@@ -160,4 +164,54 @@ h3[ data-testid = 'mission-name' ] {
 .mission_data[ data-testid = 'mission-destination' ]:before {
   content: 'Destino';
   font-weight: 800;
+}
+
+
+@media screen and ( min-width : 600px ) {
+
+  header, .conteiner_planeta_title, .conteiner_planeta, .conteiner_missions_title, .conteiner_missions {
+    margin: auto;
+    width: var(--largura_celular);
+  }
+
+  .planet-card {
+    min-width: 100px;
+  }
+
+  .conteiner_missions {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media screen and ( min-width : 800px ) {
+
+  header, .conteiner_planeta_title, .conteiner_planeta, .conteiner_missions_title, .conteiner_missions {
+    width: var(--largura_desktop);
+  }
+
+}
+
+
+@media screen and ( min-width : 1000px ) {
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  .conteiner_planeta {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .conteiner_missions {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
 }
