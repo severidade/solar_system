@@ -16,7 +16,7 @@ const VideoBackground = () => (
       controls={ false }
       speed="2"
       width="300%"
-      height="110%"
+      height="150%"
     />
   </div>
 );
