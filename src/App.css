@@ -1,87 +1,89 @@
-html {
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@400;800&family=Bellefair&display=swap') ;
 
 *, *:before, *:after {
+  box-sizing: border-box;
   box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
-.App {
-  text-align: center;
+:root {
+
+  --largura_celular: 90%;
+
+  --text_shadow: -2px 0 2px #03051f;
 }
 
 body {
   background: url('./images/stars.png') repeat-x center #362a4e;
   color: white;
+  font-family: 'Barlow Condensed' , sans-serif;
 }
 
-.conteiner_planeta_title {
-  display: flex;
-  margin: auto;
-  padding-bottom: 50px;
-  width: 80%;
+h1 {
+  font-family: 'Bellefair' , serif;
+  font-size: 55px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-align: center;
+  text-shadow: var(--text_shadow);
+  text-transform: uppercase;
 }
 
-.conteiner_planeta {
-  display: flex;
-  margin: auto;
-  padding-bottom: 50px;
-  width: 80%;
-}
-
-.conteiner_missions {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  padding-bottom: 50px;
-  width: 80%;
-}
-
-.conteiner_mission {
-  flex-grow: 1;
-  max-width: 25%;
-  padding: 20px;
-  width: 25%;
-}
-
-.mission {
-  background: white;
-  border-radius: 5px;
-  box-shadow: 10px 10px 20px #1a1a29;
-  color: #362a4e;
-  height: 100%;
-  padding: 20px;
-}
-
-.mission h3 {
+h2 {
   padding-bottom: 20px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
-.conteiner_missions_title {
-  display: flex;
+
+header, .conteiner_planeta_title, .conteiner_planeta, .conteiner_missions_title, .conteiner_missions {
   margin: auto;
-  padding-bottom: 10px;
-  width: 80%;
+  width: var(--largura_celular);
 }
+
 
 header {
   display: flex;
-  margin: auto;
   padding: 50px 0;
-  width: 80%;
 }
 
-.planeta {
-  flex-grow: 1;
+.conteiner_planeta {
+  display: grid;
+  flex-wrap: wrap;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
 }
 
 .planet-card {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.planet-card:before {
+  background-color: #03051f;
+  border-radius: 15px 0;
+  bottom: 0;
+  content: '';
+  height: calc(100% - 40px);
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+}
+
+.planet-card h3 {
+  border-top: 1px white dashed;
+  display: block;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  text-shadow: var(--text_shadow);
+  width: 70%;
+  z-index: 2;
 }
 
 .conteiner_planet_image {
@@ -92,7 +94,7 @@ header {
 
 .conteiner_planet_image:before {
   border-radius: 100%;
-  box-shadow: 14px 16px 20px #060508;
+  box-shadow: 14px 16px 20px #03051f;
   content: '';
   height: 40%;
   left: 50%;
@@ -104,19 +106,59 @@ header {
 }
 
 img {
+  filter: drop-shadow(-6px 4px 7px #03051f);
   height: 100%;
   object-fit: contain;
   width: 100%;
 }
 
-h1 {
-  font-size: 4vw;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
+.conteiner_missions_title {
+  padding-top: 80px;
 }
 
-h2 {
-  text-align: center;
-  width: 100%;
+.conteiner_missions {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+
+.conteiner_mission {
+  background: #03051f;
+
+  /* border: solid 1px white; */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h3[ data-testid = 'mission-name' ] {
+  border-bottom: 1px solid white;
+  font-family: 'Barlow' , sans-serif;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.mission_data {
+  display: grid;
+  font-family: 'Barlow' , sans-serif;
+  grid-template-columns: 1fr 2fr;
+  line-height: 1.5;
+}
+
+.mission_data[ data-testid = 'mission-year' ]:before {
+  content: 'Ano';
+  font-weight: 800;
+}
+
+.mission_data[ data-testid = 'mission-country' ]:before {
+  content: 'Pais';
+  font-weight: 800;
+}
+
+.mission_data[ data-testid = 'mission-destination' ]:before {
+  content: 'Destino';
+  font-weight: 800;
 }
