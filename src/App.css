@@ -154,7 +154,7 @@ h3[ data-testid = 'mission-name' ] {
 }
 
 .mission_data[ data-testid = 'mission-country' ]:before {
-  content: 'Pais';
+  content: 'País';
   font-weight: 800;
 }
 
