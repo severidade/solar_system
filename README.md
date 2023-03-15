@@ -36,8 +36,9 @@ Para a criação do Background em vídeo usei a biblioteca ReactPlayer.
 
 
 
-## Para rodar o projeto localmente.
-
+<!-- ## Para rodar o projeto localmente. -->
+<details>
+<summary><strong>🚀 Para rodar o projeto localmente</strong></summary><br />
 1. Clone o repositório
   * `git clone git@github.com:severidade/solar_system.git`.
   * Entre na pasta do repositório que você acabou de clonar:
@@ -48,3 +49,11 @@ Para a criação do Background em vídeo usei a biblioteca ReactPlayer.
     * `npm install`
   * Inicialize o projeto:
     * `npm start` (uma nova página deve abrir no seu navegador com um texto simples)
+</details>
+
+<details>
+  <summary><strong>🗣 Feedbacks</strong></summary><br />
+  
+_Me dê feedbacks, estou aberto a novas ideias_ 😉
+
+</details>
