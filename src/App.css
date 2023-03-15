@@ -83,6 +83,7 @@ header {
   font-size: 20px;
   padding-bottom: 20px;
   padding-top: 10px;
+  text-align: center;
   text-shadow: var(--text_shadow);
   text-transform: uppercase;
   width: 70%;
