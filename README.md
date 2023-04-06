@@ -1,4 +1,5 @@
 # Solar System
+![Prévia da página - Preview of the page](./sistema_solar.png)
 
 Esta aplicação React, desenvolvida com componentes de classe, lista todos os planetas do Sistema Solar e também algumas das missões espaciais mais conhecidas. Nela exercitei o uso de props e composição de componentes, conceitos fundamentais no desenvolvimento de aplicações React.
 
